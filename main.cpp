@@ -298,6 +298,7 @@ public:
 			auto temp = head_.next_node->next_node;
 			delete head_.next_node;
 			head_.next_node = temp;
+			--size_;
 		};
 	}
 
