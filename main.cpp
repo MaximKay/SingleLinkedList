@@ -284,12 +284,12 @@ public:
 		try{
 			temp = new Node(value, pos.node_->next_node);
 			pos.node_->next_node = temp;
-			++size_;
 		}
 		catch(...){
 			delete temp;
 			throw;
 		};
+		++size_;
 		return Iterator{temp};
 	}
 
